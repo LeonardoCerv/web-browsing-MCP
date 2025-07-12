@@ -1,17 +1,21 @@
 {
-  "name": "web-browsing-mcp",
+  "name": "@leonardocerv/web-browsing-mcp",
   "version": "1.0.0",
-  "description": "",
+  "description": "MCP server for web browsing and content extraction",
   "main": "index.js",
+  "bin": {
+    "mcp-web-browsing-server": "index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LeonardoCerv/web-browsing-MCP.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["mcp", "model-context-protocol", "web-scraping", "web-browsing", "ai-tools", "content-extraction"],
+  "author": "LeonardoCerv",
   "license": "ISC",
   "type": "module",
   "bugs": {
@@ -19,6 +23,8 @@
   },
   "homepage": "https://github.com/LeonardoCerv/web-browsing-MCP#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.15.1"
+    "@modelcontextprotocol/sdk": "^1.15.1",
+    "cheerio": "^1.1.0",
+    "zod": "^3.25.76"
   }
 }
